@@ -1,4 +1,4 @@
-# 🛣️ Safar
+# Safar
 
 **Know the road before you take it.**
 
@@ -9,7 +9,7 @@ Safar is a community-powered route-awareness application that helps people choos
 
 ---
 
-## 📖 Problem Statement
+## Problem Statement
 
 Residents travelling through Bahawalpur often make route decisions without timely information about road damage, seepage, blockages, lighting, traffic hazards, and local safety concerns. Bahawalpur Safar turns community observations into structured route-awareness signals so travellers can compare routes and make better-informed decisions.
 
@@ -17,19 +17,19 @@ This app **does not** predict crime or guarantee safety. It surfaces recent, unv
 
 ---
 
-## ✨ Core Features
+## Core Features
 
-- 📍 **Route comparison** — Fastest / Better-lit / Fewer-hazards route options
-- 📝 **Community reporting** — Submit issues in English, Urdu, or Roman Urdu (e.g. *"Aagay gali band hai"*, *"Yahan seepage hai"*)
-- 🤖 **AI classification** — Gemini converts informal, mixed-language reports into structured JSON signals
-- 🗺️ **Live map markers** — Reports plotted on affected road segments
-- 🔊 **Voice warnings** — Flutter TTS announces hazards in English/Urdu/Roman Urdu
-- ✅ **Safety check-in** — Timer-based "I arrived safely" flow
-- 🛡️ **Privacy-first** — Anonymous reports, no names/faces/plates, time-decayed signals, confidence labels
+-  **Route comparison** — Fastest / Better-lit / Fewer-hazards route options
+-  **Community reporting** — Submit issues in English, Urdu, or Roman Urdu (e.g. *"Aagay gali band hai"*, *"Yahan seepage hai"*)
+-  **AI classification** — Gemini converts informal, mixed-language reports into structured JSON signals
+-  **Live map markers** — Reports plotted on affected road segments
+-  **Voice warnings** — Flutter TTS announces hazards in English/Urdu/Roman Urdu
+-  **Safety check-in** — Timer-based "I arrived safely" flow
+-  **Privacy-first** — Anonymous reports, no names/faces/plates, time-decayed signals, confidence labels
 
 ---
 
-## 🧩 Report Categories
+##  Report Categories
 
 | Category | Examples |
 |---|---|
@@ -40,7 +40,7 @@ This app **does not** predict crime or guarantee safety. It surfaces recent, unv
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -54,11 +54,11 @@ This app **does not** predict crime or guarantee safety. It surfaces recent, unv
 | State management | Provider or Riverpod |
 | HTTP | http / dio |
 
-> ⚠️ Verify current Firestore and Gemini free-tier quotas in official docs before relying on them for the demo.
+>  Verify current Firestore and Gemini free-tier quotas in official docs before relying on them for the demo.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 lib/
@@ -109,7 +109,7 @@ lib/
 
 ---
 
-## 🔥 Firestore Collections
+##  Firestore Collections
 
 - **`reports`** — individual community reports (category, location, confidence, severity, status)
 - **`road_segments`** — aggregated scores per road segment (lighting, condition, active report count)
@@ -120,7 +120,7 @@ Sample document shapes are in the [full blueprint](#) (see `docs/` or original s
 
 ---
 
-## 🤖 Gemini Integration
+##  Gemini Integration
 
 Gemini classifies free-text reports (English / Urdu / Roman Urdu) into strict JSON:
 
@@ -146,7 +146,7 @@ If Gemini fails or hits quota limits, the app falls back to **manual category se
 
 ---
 
-## 📐 Route-Awareness Algorithm
+##  Route-Awareness Algorithm
 
 Deterministic, explainable scoring — no fake "safety percentages":
 
@@ -167,7 +167,7 @@ Labels shown to users: *"Low reported caution"*, *"Moderate reported caution"*, 
 
 ---
 
-## 🔒 Privacy & Abuse Prevention
+##  Privacy & Abuse Prevention
 
 - Anonymous by default, no names/faces/phone numbers/plates
 - No public accusations against identifiable people
@@ -180,7 +180,7 @@ Labels shown to users: *"Low reported caution"*, *"Moderate reported caution"*, 
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 git clone <repo-url>
@@ -197,7 +197,7 @@ flutter run
 
 ---
 
-## 🎬 Demo Flow
+##  Demo Flow
 
 1. Open app → enter destination
 2. See 3 route options (Fastest / Better-lit / Fewer-hazards)
@@ -211,19 +211,19 @@ flutter run
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 > Community reports may be incomplete or unverified. This app does not guarantee safety or road availability. It is not a police replacement, emergency dispatch system, or crime-prediction tool.
 
 ---
 
-## 👥 Team (3-person split)
+##  Team (3-person split)
 
 | Role | Responsibility |
 |---|---|
-| Dev 1 | Flutter screens, map, route cards |
-| Dev 2 | Firebase, reports, risk engine, seeded data |
-| Dev 3 | Gemini integration, voice warnings, testing, pitch |
+| Muneeb | Flutter screens, map, route cards |
+| Ashar | Firebase, reports, risk engine, seeded data |
+| Huzaifa | Gemini integration, voice warnings, testing, pitch |
 
 ---
 
