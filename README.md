@@ -2,7 +2,7 @@
 
 **Know the road before you take it.**
 
-Safar is a community-powered route-awareness app that helps people choose better-informed routes by combining navigation with live, community-submitted reports about poor lighting, road damage, seepage, blocked streets, traffic hazards, and local safety concerns.
+Safar is a community-powered route-awareness application that helps people choose better-informed routes by combining navigation with live, community-submitted reports about poor lighting, road damage, seepage, blocked streets, traffic hazards, and local safety concerns.
 
 > A normal map app answers *"What's the fastest way?"*
 > Bahawalpur Safar answers *"What should I know about this route before I travel?"*
